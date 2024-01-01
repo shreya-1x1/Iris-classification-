@@ -1,0 +1,62 @@
+<html>
+    <style>
+            .x {
+      background-color: #f9caf6;
+      padding: 40px;
+      border: 2px solid #ccc;
+      color: black;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      text-align: center;
+    }
+        button:hover {
+background-color:grey;
+}
+.w100 {
+      width: 100%;
+    }
+.w50 {
+      box-sizing: border-box;
+    }
+.w50 {
+      width: 50%;
+    }
+    .fleft {
+      float: left;
+    }
+
+    .fright {
+      float: right;
+    }
+button { 
+background-color: black;
+color: #fff;
+padding: 10px 15px;
+border: none;
+}
+    </style>
+    <body>
+
+        <div class="x" >
+            <form  action='/predict' method="POST">
+
+               <h1> Sepal Length: <input type='text' name='SepalLengthCm'><br><br></h1>
+
+               <h1> Sepal Width: <input type='text' name='SepalWidthCm'><br><br></h1>
+
+                <h1> Petal Length: <input type='text' name='PetalLengthCm'><br><br></h1>
+
+                <h1> Petal Width: <input type='text' name='PetalWidthCm'><br><br></h1>
+
+                <h1> Class: {{result}} <br><br></h1>
+
+                <input type="submit"  style="background-color:black; color:#f4dd46; " value='Predict'>
+
+            </form>
+        </div>
+\
+    </body>
+
+
+</html>
